@@ -53,6 +53,17 @@ const nums = [3, 5, 2, 6, 5, 9];
 // const b = nums[1];
 // const c = nums[2];
 // console.log(a);
-const [a, b, c, ...d] = nums;
+const [a, b, c, ...d] = nums; //...d = rest operator
 
 console.log(a, b, c, d);
+
+const person = {
+  name: "Moudud",
+  age: 27,
+  country: "Bangladesh",
+  p: [1, 2, 3, 4],
+};
+
+const person1 = person;
+person.email = "hello@gmail.com";
+console.log(person);
